@@ -64,10 +64,10 @@ $result_3 = $wpdb->get_results($query_3);
 	<script>
 	var flag_append = 0;
 	jQuery(document).ready(function(){		
-			//setTimeout(function() { 
+			
 			var everythingLoaded = setInterval(function() {
 			if(jQuery('.am-select-any-employee-option')[0] && flag_append == 0) {
-				console.log("here");
+				
 				
 				var i = 0;
 				
@@ -76,7 +76,7 @@ $result_3 = $wpdb->get_results($query_3);
 					var old_emp = jQuery(this).html();
 					var new_emp = '<span><?php echo $provider_name; ?></span>';
 					
-					console.log(old_emp);
+					//console.log(old_emp);
 					
 					if(i == 0) {
 					jQuery(this).html('<span>Any employee</span>');
@@ -93,14 +93,12 @@ $result_3 = $wpdb->get_results($query_3);
 				flag_append = 1;
 				clearInterval(everythingLoaded);
 				
-				/* var content = '<li class="el-select-dropdown__item am-select-any-employee-option selected"><span>Any employee</span></li><li class="el-select-dropdown__item"><span>Test1 User</span></li>';
-				jQuery('.custom_list').parent().append(content); */
+				
 				
 			} else {
 				console.log("else");
 			}
 			
-			//}, 3000);
 			}, 10);
 				
 		});	
