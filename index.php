@@ -237,19 +237,6 @@ foreach($result_approve as $result_appro ){
 
 add_action( 'wp_footer', 'check_bookings' );
 
-function test(){
-?>
-
-<script>
-
-
-
-</script>
-
-<?php
-}
-
-add_action( 'wp_footer', 'test' );
 
 ?>
 
